@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import Contacts
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var nonSocialContact: CNMutableContact {
+        return ContactProvider.instance.createNonSocialContact()
+    }
+
+    var socialContact: CNMutableContact {
+        return ContactProvider.instance.createSocialContact()
+    }
+}
+
+// MARK: - IBActions
+
+extension ViewController {
+
+    @IBAction func clickedNonSocial(sender: UIButton) {
+        ContactProvider.instance.addContact(nonSocialContact, viewController: self)
+    }
+
+    @IBAction func clickedSocial(sender: UIButton) {
+        ContactProvider.instance.addContact(socialContact, viewController: self)
     }
 
 
 }
-
