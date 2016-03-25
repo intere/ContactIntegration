@@ -21,8 +21,6 @@ print("Saved \(contact) to the Address Book")
 I have 2 videos that I created using QuickTime to record video from my devices, and then iMovie to create an "App Preview" to master the following videos:
 
 ## Failure
-<iframe width="420" height="315" src="https://www.youtube.com/embed/qGSpDvDT5No" frameborder="0" allowfullscreen></iframe>
-
+![iPhone 6SPlus](Contacts_iPhone6SPlus.gif)
 ## Success
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/lqxjHpf-38U" frameborder="0" allowfullscreen></iframe>
+![iPhone 5S](Contacts_iPhone5S.gif)
